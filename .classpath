@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Program Files/Oracle/JavaFX 2.2 SDK/rt/lib/jfxrt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/chloe/Downloads/jfxtras-labs-samples-8.0-r6-SNAPSHOT-all.jar"/>
+	<classpathentry kind="lib" path="C:/Users/chloe/Downloads/jfxtras-labs-8.0-r3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/chloe/Downloads/jar_files/jfxtras-agenda-8.0-r5.jar"/>
+	<classpathentry kind="lib" path="D:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

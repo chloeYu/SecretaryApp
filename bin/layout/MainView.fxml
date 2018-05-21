@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <TabPane fx:id="tabPane" layoutY="238.0" prefHeight="345.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+        <tabs>
+          <Tab fx:id="calendar" text="일정추가">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="600.0" />
+            </content>
+          </Tab>
+          <Tab text="거래처">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="314.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="거래처명" />
+                            <TableColumn prefWidth="75.0" text="전화번호" />
+                              <TableColumn prefWidth="75.0" text="사장명" />
+                              <TableColumn prefWidth="75.0" text="Tel" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="매출">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="203.0" prefWidth="600.0">
+                     <children>
+                        <LineChart prefHeight="311.0" prefWidth="600.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="계산기">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="sendButton" layoutX="528.0" layoutY="208.0" mnemonicParsing="false" text="전송" visible="true"/>
+      <TextArea fx:id="chatMessage" layoutX="47.0" layoutY="207.0" prefHeight="25.0" prefWidth="477.0" visible="true"/>
+      <TextArea fx:id="chatRoom" layoutX="47.0" layoutY="48.0" prefHeight="150.0" prefWidth="521.0" visible="true"/>
+      <MenuBar layoutY="2.0" prefHeight="12.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="close" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="회원관리">
+            <items>
+              <MenuItem mnemonicParsing="false" text="회원 가입 승인" />
+                  <MenuItem mnemonicParsing="false" text="권한 설정" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="id" layoutX="317.0" layoutY="16.0" prefHeight="23.0" prefWidth="92.0" promptText="ID 입력" />
+      <PasswordField fx:id="pw" layoutX="420.0" layoutY="16.0" prefHeight="23.0" prefWidth="92.0" />
+      <Button fx:id="login" layoutX="528.0" layoutY="16.0" mnemonicParsing="false" text="접속" />
+   </children>
+</Pane>
